@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Raijin</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <img src="icons/48.png" alt="" width="28" height="28" />
+    <div>
+      <strong>Raijin</strong>
+      <span>Download Manager</span>
+    </div>
+    <i id="status-dot" class="dot"></i>
+  </header>
+  <p id="status" class="status">Checking connection…</p>
+
+  <label class="row">
+    <span><b>Capture downloads</b><small>Send browser downloads to Raijin</small></span>
+    <input type="checkbox" id="enabled" />
+  </label>
+
+  <label class="field">
+    <span>Ignore files smaller than (KB)</span>
+    <input type="number" id="minSizeKB" min="0" step="1" />
+  </label>
+  <label class="field">
+    <span>Never capture on these sites</span>
+    <input type="text" id="skipHosts" placeholder="example.com, drive.google.com" />
+  </label>
+  <label class="field">
+    <span>Raijin port</span>
+    <input type="number" id="port" min="1024" max="65535" />
+  </label>
+
+  <footer>by Jessie Albert Regualos <em>(Yotsuchi)</em></footer>
+  <script src="popup.js"></script>
+</body>
+</html>
